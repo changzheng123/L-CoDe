@@ -1,0 +1,23 @@
+MODEL_DIR: 'checkpoint/'
+MODEL_FOLDER: 'official/'
+RESOURCE_DIR: 'resources/'
+RESULT_FOLDER: 'test'
+
+
+RESULT_DIR: 'results/'
+TEST_INFO: 'test.json'
+TEST_DIR: 'example'
+
+GPU_group: [0]
+
+RNN_TYPE: "LSTM"
+
+TRAIN:
+    CKPT: 11
+
+DATA:
+    THRESHOLD_PROPORTION: 0.05
+
+TEXT:
+    WORDS_NUM: 15
+    EMBEDDING_DIM: 512

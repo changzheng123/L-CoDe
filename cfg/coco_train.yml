@@ -1,0 +1,28 @@
+# IMG_DIR: 'E:/dataset/MSCOCO/'
+IMG_DIR: '/data2/cz2021/MSCOCO'
+MODEL_DIR: 'checkpoint/'
+MODEL_FOLDER: 'official/'
+RESOURCE_DIR: 'resources/'
+RESULT_DIR: 'results/'
+LOG_FILE: 'coco.txt'
+TRAIN_CAPTION: 'selected_train.json'
+VAL_CAPTION: 'selected_val.json'
+WORKERS: 0
+GPU_group: [0]
+
+RNN_TYPE: "LSTM"
+
+TRAIN:
+    CKPT: 11
+    BATCH_SIZE: 32
+    MAX_EPOCH: 13
+    SAVE_INTERVAL: 3
+    EVAL_FREQUENCY: 3
+    LEARNING_RATE: 0.00002
+
+TEXT:
+    WORDS_NUM: 15
+    EMBEDDING_DIM: 512
+
+
+
