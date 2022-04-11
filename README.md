@@ -4,7 +4,7 @@
 This is the author's official PyTorch L-CoDe implementation.
 In this paper, we propose L-CoDe, a Language-based Colorization network using color-object Decoupled conditions. A predictor for object-color corresponding matrix (OCCM) and a novel attention transfer module (ATM) are introduced to solve the color-object coupling problem. To deal with color-object mismatch that results in incorrect color-object correspondence, we adopt a soft-gated injection module (SIM).
 
- <img src="./pipeline.png" width = "600" height = "230" alt="图片名称" align=center />
+ <img src="./pipeline.png" width = "650" height = "230" alt="图片名称" align=center />
 
 ## Prerequisites
 * Python 3.6
