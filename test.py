@@ -78,10 +78,6 @@ if __name__ == "__main__":
     generator = nn.DataParallel(generator, device_ids=cfg.GPU_group)
     generator.load_state_dict(generator_state_dict)
 
-    print('word_enc:',parameter_count_table(word_encoder))
-    print('gen:',parameter_count_table(generator))
-    sys.exit()
-
     # prepare data
     save_img_dir = os.path.join(cfg.RESULT_DIR, cfg.RESULT_FOLDER,cfg.MODEL_FOLDER,'val'+str(cfg.TRAIN.CKPT))
     print(save_img_dir)
