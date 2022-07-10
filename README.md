@@ -1,4 +1,4 @@
-# L-CoDe: Language-based Colorization Using Color-object Decoupled ConditionsM
+# L-CoDe: Language-based Colorization Using Color-object Decoupled Conditions
 
 ## Introducation
 This is the author's official PyTorch L-CoDe implementation.

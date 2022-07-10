@@ -16,6 +16,8 @@ from model.Gmodel import GNet
 from model.Emodel import RNN_ENCODER
 from datasets import TextDataset, prepare_data
 from nltk.tokenize import RegexpTokenizer
+from fvcore.nn import FlopCountAnalysis, parameter_count_table
+import sys
 
 
 def parse_args():
@@ -75,6 +77,10 @@ if __name__ == "__main__":
     generator = generator.cuda()
     generator = nn.DataParallel(generator, device_ids=cfg.GPU_group)
     generator.load_state_dict(generator_state_dict)
+
+    print('word_enc:',parameter_count_table(word_encoder))
+    print('gen:',parameter_count_table(generator))
+    sys.exit()
 
     # prepare data
     save_img_dir = os.path.join(cfg.RESULT_DIR, cfg.RESULT_FOLDER,cfg.MODEL_FOLDER,'val'+str(cfg.TRAIN.CKPT))
