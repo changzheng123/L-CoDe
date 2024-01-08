@@ -19,7 +19,7 @@ Install PyTorch and dependencies from http://pytorch.org
 Install other python requirements
 
 ## Datasets
-We process the [MSCOCO](https://cocodataset.org/) dataset for evaluation. Specifically, we keep the images whose captions contain adjectives and annotate the correspondence between adjectives and nouns in the caption to produce the ground-truth object-color corresponding matrix (OCCM). Metadata is in ``./resources``.
+We process the [MSCOCO](https://cocodataset.org/) dataset for evaluation. Specifically, we keep the images whose captions contain adjectives and annotate the correspondence between adjectives and nouns in the caption to produce the ground-truth object-color corresponding matrix (OCCM). Metadata is in [here](https://drive.google.com/drive/folders/1iW0u5WZL5NQg1gseawhNVBaf1MOYdp1o?usp=sharing).
 
 ## Getting Started
 Download the [coco2017 images](https://cocodataset.org/) and copy them under IMG_DIR.
